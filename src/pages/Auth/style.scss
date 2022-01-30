@@ -1,0 +1,67 @@
+@import "../../constants/colors";
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+}
+.authForm > p {
+  color: $text-secondary;
+  margin-bottom: 50px;
+}
+.authFields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.authField {
+  width: 45%;
+}
+.authForm__labels {
+  margin-top: 40px;
+}
+.authForm__labels span {
+  color: $primary;
+}
+.authForm__labels p {
+  color: #acacac;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .authForm {
+    align-items: center;
+  }
+  .authFields {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .authFields:last-of-type {
+    margin-bottom: 30px;
+  }
+  .authField {
+    width: 90%;
+  }
+  .authField:first-of-type {
+    margin-bottom: 10px;
+  }
+  .authForm .custom_button {
+    width: 90%;
+  }
+  .authForm__labels {
+    align-self: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}

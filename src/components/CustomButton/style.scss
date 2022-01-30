@@ -1,0 +1,19 @@
+@import "../../constants/colors";
+
+.custom_button {
+  width: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: $primary;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .custom_button {
+    font-size: 0.5rem;
+    width: 300px;
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../../constants/colors";
+
+.notFound {
+  background-color: $background-primary;
+  height: 100vh;
+  width: 100vw;
+}
+.notFound__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  color: $text-white;
+  z-index: 10;
+}
+.notFound__nav {
+  flex: 0.09765625;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 40px;
+}
+.notFound__body {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.notFound__body-left,
+.notFound__body-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFound__body-left {
+  padding: 40px;
+  align-items: flex-start;
+}
+.notFound__body-right {
+  align-items: center;
+}
+.notFound__image {
+  width: 80%;
+}
+.notFound__body h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.notFound__body p {
+  font-size: 20px;
+  margin-bottom: 70px;
+  color: $text-secondary;
+}
+@media only screen and (max-width: 600px) {
+  .notFound__nav {
+    padding: 30px 20px 0;
+    flex: 0.05;
+  }
+  .notFound__body {
+    flex-direction: column-reverse;
+  }
+  .notFound__body-left {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .notFound__body-right {
+    height: 80%;
+    flex: 0.4;
+    padding-top: 40px;
+  }
+  .notFound__image {
+    width: 70%;
+  }
+  .notFound__body h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .notFound__body p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
