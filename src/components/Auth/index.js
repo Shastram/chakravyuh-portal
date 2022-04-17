@@ -3,6 +3,8 @@ import Logo from "../Logo"
 import "./style.scss"
 import OAuthButtonTheme from '../../themes/OAuthButtonTheme'
 import { ThemeProvider, Button } from '@mui/material'
+import githubIcon from "../../assets/images/github_icon.png"
+import googleIcon from "../../assets/images/google_icon.png"
 
 const Auth = ({ label, image, formComponent, showOAuth = false }) => {
     return (
@@ -35,11 +37,11 @@ const OAuth = () => {
             <p className="oauth__label"><span>Sign in with</span></p>
             <div className="oauth__buttons">
                 <OAuthButton
-                    logo="https://cdn.icon-icons.com/icons2/2108/PNG/512/google_icon_130924.png"
+                    logo={googleIcon}
                     label="Google"
                 />
                 <OAuthButton
-                    logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                    logo={githubIcon}
                     label="Github"
                 />
             </div>
