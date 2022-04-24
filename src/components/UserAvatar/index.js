@@ -42,7 +42,7 @@ const UserAvatar = () => {
     const handleLogout = () => {
         dispatch(logout())
     }
-    const color = "#75cfb8"
+    const color = "#7f70f1"
     const userLetter = user?.name[0]
     const avatarStyle = { width: 40, height: 40, bgcolor: `${color}55`, color: color, fontSize: 23 }
     return (
