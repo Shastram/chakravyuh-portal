@@ -57,8 +57,8 @@ const LoginForm = () => {
         </React.Fragment>
     );
     const onSubmit = (values) => {
-        // axios.post("/auth/login", values).then((response) => {
-        //     if (response.data.status === "success") {
+        // axios.post("/login", values).then((response) => {
+        //     if (response.data.status === true) {
         //         dispatch(login(response.data.result.token, response.data.result.user))
         //     }
         //     else {
